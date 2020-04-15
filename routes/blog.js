@@ -20,7 +20,7 @@ router.post('/blog', (req, res) => {
 
 router.get('/blogs', (req, res) => {
   Blog.find({}).then((blogs) => {
-    blogs.reverse();
+    // blogs.reverse();
     return res.json(blogs);
   });
 });
